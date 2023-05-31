@@ -1,0 +1,18 @@
+name: 'Get the FLAG'
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the FLAG
+        run: |
+          echo "Can you get the FLAG? 🚩"
+          echo "I've been told that it it placed securely in the github secrets."
